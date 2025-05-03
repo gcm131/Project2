@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
       console.log('Form submitted');
-      alert('Thank you for signing up! You will receive info to your email!');
+      alert('Thank you for signing up! You will receive the info in an email!');
     });
   } else {
     console.log('Form not found');
