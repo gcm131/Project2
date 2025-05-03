@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 .bodyFont {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -5,26 +8,24 @@
   color: black;
   font-weight: bold;
 }
-body{
-  background-color: black;
-}
 .menu {
   margin-bottom: 20px;
   text-align: center;
 }
-.menu-list{
+.mtitle{
+  color:white;
+  margin:10,10,10,10;
+}
+.mlist{
   list-style: none;
   display: flex;
   justify-content: center;
 }
-#navigation-menu{
-  background-color:lightgrey;
-}
-#otherpages{
+#navm{
   background-color:lightgrey;
 }
 
-.rolloverNav {
+.rollnav{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 24px; /* Adjusted line height for better spacing */
@@ -36,7 +37,7 @@ body{
   background-color: #333333; /* adding Button background color */
 }
 
-a.rolloverNav:hover {
+a.rollnav:hover {
   color: #990000; /* Changes text color on hover */
   background-color: #555555; /* Changes button background color on hover */
   text-decoration: none; /* Ensures no underline appears */
@@ -48,64 +49,29 @@ a.rolloverNav:hover {
 }
 
 /* Main Content for history page*/
-.main-content {
+.mainc{
   padding: 20px;
-  background-color: #f4f4f4;
   margin: 20px auto;
   width: 80%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  margin: 25px auto 0;
+  padding: 20px;
+  background-color: #f7f5f5;
+  text-align: center;
 }
 
-/* for the read More Link */
-.read-more .rolloverNav {
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .main-content table {
-    width: 100%; /* Adjusts the table width for mobile devices */
-  }
-
-  .main-content td {
-    display: block; /* Stack cells vertically */
-    width: auto;
-  }
-}
 
 /*parts that doesn't apply to the history page*/
 .formsField {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #666666;
   text-decoration: none;
-  border: 1px solid #666666;
   text-align: center;
+  width:90%;
+  font-size:0.9em;
 }
-.formsMessage {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #666666;
-  text-decoration: none;
-}
-.formsSend {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #666666;
-  text-decoration: none;
-}
-.copyright {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 9px;
-  font-weight: bold;
-  color: #666666;
-  font-style: italic;
-}
-.bodyFont .style2 .style2 {
-}
-this page {
-  color: #666;
-}
-tr td div .rolloverNav .bodyFont {
+
+tr td div .rollnav .bodyFont {
   color: #666;
 }
