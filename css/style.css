@@ -1,110 +1,174 @@
-body{
+
+body {
   background-color: black;
 }
+
 .bodyFont {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75em;
+  line-height: 1.5em;
   color: black;
   font-weight: bold;
 }
+
 .menu {
   margin-bottom: 20px;
   text-align: center;
 }
-.mtitle{
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin:10,10,10,10;
-  text-align: left;
-  font-size:3em;
-  padding: 3em 2em;
-  margin-bottom: -2em;
-  border-bottom: 4px solid #FF0000;
 
+.mtitle {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 3em;
+  padding: 2em 1em;
+  margin-bottom: -2em;
+  border-bottom: 4px solid #990000;
 }
-h2{
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin: 20px 0;
-  padding: 10px;
-  border-bottom: 2px solid #ccc;  
-}
-h1{
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  border-bottom: 2px solid #ccc;  
-}
-.mlist{
+
+.mlist {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-#navm{
-  background-color:lightgrey;
+
+#navm {
+  background-color: lightgrey;
 }
+
+.rollnav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.625em 1.9375em;
+  display: inline-block;
+  border-radius: 0.3125em;
+}
+
+.rollnav:hover {
+  color: #990000;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  border-bottom: 0.125em solid #ccc;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin: 1.25em 0;
+  padding: 0.625em;
+  border-bottom: 0.125em solid #ccc;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.forms-field {
+  width: 90%;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 1.25em;
+  background-color: #f7f5f5;
+  text-align:center;
+}
+
+.form-group {
+  margin-bottom: 0.9375em;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.3125em;
+  text-align: left;
+}
+
+.input-field {
+  width: 90%;
+  padding: 0.625em;
+  font-size: 1em;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #990000;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.625em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 0.3125em;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #990000;
+}
+
 .media-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
+
 video, img {
   width: 100%;
   height: auto;
 }
 
-.rollnav{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 24px; /* Adjusted line height for better spacing */
-  color: #FFFFFF; 
-  text-decoration: none; 
-  padding: 10px 15px; /* Adds space around the text  */
-  display: inline-block; /* giving it a Button-like appearance */
-  border-radius: 5px; /* Adds rounded corners */
-  background-color: #333333; /* adding Button background color */
-}
-
-a.rollnav:hover {
-  color: #990000; /* Changes text color on hover */
-  background-color: #555555; /* Changes button background color on hover */
-  text-decoration: none; /* Ensures no underline appears */
-}
-.navFont {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #999999;
-  font-size: 11px;
-}
-
-/* Main Content for history page*/
-.mainc{
-  padding: 20px;
-  margin: 20px auto;
+.mainc {
+  padding: 1.25em;
+  margin: 1.25em auto;
   width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  margin: 25px auto 0;
-  padding: 20px;
+  box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
   background-color: #f7f5f5;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 50%;
+  }
 
-/*parts that doesn't apply to the history page*/
-.formsField {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  width:90%;
-  font-size:0.9em;
+  .forms-field {
+    max-width: 35em;
+  }
 }
 
-tr td div .rollnav .bodyFont {
-  color: #666;
+@media screen and (min-width: 480px) {
+  .menu {
+    padding: 0.5em 2em;
+  }
+  
+  .forms-field {
+    width: 95%;
+    max-width: none;
+  }
+  
+  .mtitle {
+    font-size: 4em;
+    padding: 2.5em 1em;
+  }
+
+  .input-field {
+    width: 100%;
+  }
 }
