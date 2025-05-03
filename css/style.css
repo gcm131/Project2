@@ -12,19 +12,16 @@ body{
   margin-bottom: 20px;
   text-align: center;
 }
-.menu-list{
+.mlist{
   list-style: none;
   display: flex;
   justify-content: center;
 }
-#navigation-menu{
-  background-color:lightgrey;
-}
-#otherpages{
+#navm{
   background-color:lightgrey;
 }
 
-.rolloverNav {
+.rollnav{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 24px; /* Adjusted line height for better spacing */
@@ -36,7 +33,7 @@ body{
   background-color: #333333; /* adding Button background color */
 }
 
-a.rolloverNav:hover {
+a.rollnav:hover {
   color: #990000; /* Changes text color on hover */
   background-color: #555555; /* Changes button background color on hover */
   text-decoration: none; /* Ensures no underline appears */
@@ -48,7 +45,7 @@ a.rolloverNav:hover {
 }
 
 /* Main Content for history page*/
-.main-content {
+.mainc{
   padding: 20px;
   background-color: #f4f4f4;
   margin: 20px auto;
@@ -58,18 +55,18 @@ a.rolloverNav:hover {
 }
 
 /* for the read More Link */
-.read-more .rolloverNav {
+.read-more .rollnav {
   font-size: 14px;
   font-style: italic;
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-  .main-content table {
+  .mainc table {
     width: 100%; /* Adjusts the table width for mobile devices */
   }
 
-  .main-content td {
+  .mainc td {
     display: block; /* Stack cells vertically */
     width: auto;
   }
@@ -106,6 +103,6 @@ a.rolloverNav:hover {
 this page {
   color: #666;
 }
-tr td div .rolloverNav .bodyFont {
+tr td div .rollnav .bodyFont {
   color: #666;
 }
